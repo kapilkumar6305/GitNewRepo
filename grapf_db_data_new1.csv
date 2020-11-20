@@ -1,0 +1,120 @@
+FUND,FUND_Label, FUND_REIT_relationship,REIT,REIT_LABEL, REIT_Property_relationship,Property,Property_Label, Property_PropertyType_relationship,PropertyType,PropertyType_Label 
+JOSH's FUND,FUNDS,Is managed by,Fund Manager,USERs,,,,,,
+JOSH's FUND,FUNDs,Has exposure to,Medical Properties Trust ,REITs,Owns,Alvarado Hospital Medical Center,PROPERTY,Belongs to,Healthcare,Industry Type
+JOSH's FUND,FUNDs,Has exposure to,Medical Properties Trust ,REITs,Owns,Alvarado Hospital Medical Center,PROPERTY,Impacted by,Occupancy 60%,MARKET DATA
+JOSH's FUND,FUNDs,Has exposure to,Medical Properties Trust ,REITs,Owns,Alvarado Hospital Medical Center,PROPERTY,Impacted by,Location = Charlotte,Geographical Data
+JOSH's FUND,FUNDs,Has exposure to,Medical Properties Trust ,REITs,Owns,Alvarado Hospital Medical Center,PROPERTY,Has,Size = 306,Size
+JOSH's FUND,FUNDs,Has exposure to,Medical Properties Trust ,REITs,Owns,Ashtead Hospital,PROPERTY,Belongs to,Healthcare,Industry Type
+JOSH's FUND,FUNDs,Has exposure to,Medical Properties Trust ,REITs,Owns,Ashtead Hospital,PROPERTY,Impacted by,Occupancy 40%,MARKET DATA
+JOSH's FUND,FUNDs,Has exposure to,Medical Properties Trust ,REITs,Owns,Ashtead Hospital,PROPERTY,Impacted by,Location = San Diego,Geographical Data
+JOSH's FUND,FUNDs,Has exposure to,Medical Properties Trust ,REITs,Owns,Ashtead Hospital,PROPERTY,Has,Size = 55,Size
+JOSH's FUND,FUNDs,Has exposure to,Medical Properties Trust ,REITs,Owns,Beardwood,PROPERTY,Belongs to,Healthcare,Industry Type
+JOSH's FUND,FUNDs,Has exposure to,Medical Properties Trust ,REITs,Owns,Beardwood,PROPERTY,Impacted by,Occupancy 90%,MARKET DATA
+JOSH's FUND,FUNDs,Has exposure to,Medical Properties Trust ,REITs,Owns,Beardwood,PROPERTY,Impacted by,Location = NJ,Geographical Data
+JOSH's FUND,FUNDs,Has exposure to,Medical Properties Trust ,REITs,Owns,Beardwood,PROPERTY,Has,Size = 18,Size
+JOSH's FUND,FUNDs,Has exposure to,Medical Properties Trust ,REITs,Owns,Beaumont,PROPERTY,Belongs to,Healthcare,Industry Type
+JOSH's FUND,FUNDs,Has exposure to,Medical Properties Trust ,REITs,Owns,Beaumont,PROPERTY,Impacted by,Occupancy 85%,MARKET DATA
+JOSH's FUND,FUNDs,Has exposure to,Medical Properties Trust ,REITs,Owns,Beaumont,PROPERTY,Impacted by,Location = Columbus,Geographical Data
+JOSH's FUND,FUNDs,Has exposure to,Medical Properties Trust ,REITs,Owns,Beaumont,PROPERTY,Has,Size = 34,Size
+JOSH's FUND,FUNDs,Has exposure to,Medical Properties Trust ,REITs,Owns,Circle Health Rehabilitation,PROPERTY,Belongs to,Healthcare,Industry Type
+JOSH's FUND,FUNDs,Has exposure to,Medical Properties Trust ,REITs,Owns,Circle Health Rehabilitation,PROPERTY,Impacted by,Occupancy 30%,MARKET DATA
+JOSH's FUND,FUNDs,Has exposure to,Medical Properties Trust ,REITs,Owns,Circle Health Rehabilitation,PROPERTY,Impacted by,Location = Columbus,Geographical Data
+JOSH's FUND,FUNDs,Has exposure to,Medical Properties Trust ,REITs,Owns,Circle Health Rehabilitation,PROPERTY,Has,Size = 120,Size
+JOSH's FUND,FUNDs,Has exposure to,Medical Properties Trust ,REITs,Owns,East Ohio Regional Hospital,PROPERTY,Belongs to,Healthcare,Industry Type
+JOSH's FUND,FUNDs,Has exposure to,Medical Properties Trust ,REITs,Owns,East Ohio Regional Hospital,PROPERTY,Impacted by,Occupancy 70%,MARKET DATA
+JOSH's FUND,FUNDs,Has exposure to,Medical Properties Trust ,REITs,Owns,East Ohio Regional Hospital,PROPERTY,Impacted by,Location = Dallas,Geographical Data
+JOSH's FUND,FUNDs,Has exposure to,Medical Properties Trust ,REITs,Owns,East Ohio Regional Hospital,PROPERTY,Has,Size = NA,Size
+JOSH's FUND,FUNDs,Has exposure to,Medical Properties Trust ,REITs,Owns,Fairmont Regional Medical Center,PROPERTY,Belongs to,Healthcare,Industry Type
+JOSH's FUND,FUNDs,Has exposure to,Medical Properties Trust ,REITs,Owns,Fairmont Regional Medical Center,PROPERTY,Impacted by,Occupancy 85%,MARKET DATA
+JOSH's FUND,FUNDs,Has exposure to,Medical Properties Trust ,REITs,Owns,Fairmont Regional Medical Center,PROPERTY,Impacted by,Location = Charlotte,Geographical Data
+JOSH's FUND,FUNDs,Has exposure to,Medical Properties Trust ,REITs,Owns,Fairmont Regional Medical Center,PROPERTY,Has,Size = 207,Size
+JOSH's FUND,FUNDs,Has exposure to,Medical Properties Trust ,REITs,Owns,Ohio Valley Medical Center,PROPERTY,Belongs to,Healthcare,Industry Type
+JOSH's FUND,FUNDs,Has exposure to,Medical Properties Trust ,REITs,Owns,Ohio Valley Medical Center,PROPERTY,Impacted by,Occupancy 85%,MARKET DATA
+JOSH's FUND,FUNDs,Has exposure to,Medical Properties Trust ,REITs,Owns,Ohio Valley Medical Center,PROPERTY,Impacted by,Location = Des Moines,Geographical Data
+JOSH's FUND,FUNDs,Has exposure to,Medical Properties Trust ,REITs,Owns,Ohio Valley Medical Center,PROPERTY,Has,Size = NA,Size
+JOSH's FUND,FUNDs,Has exposure to,Medical Properties Trust ,REITs,Owns,Winfield Hospital,PROPERTY,Belongs to,Healthcare,Industry Type
+JOSH's FUND,FUNDs,Has exposure to,Medical Properties Trust ,REITs,Owns,Winfield Hospital,PROPERTY,Impacted by,Occupancy 30%,MARKET DATA
+JOSH's FUND,FUNDs,Has exposure to,Medical Properties Trust ,REITs,Owns,Winfield Hospital,PROPERTY,Impacted by,Location = Washingtom DC,Geographical Data
+JOSH's FUND,FUNDs,Has exposure to,Medical Properties Trust ,REITs,Owns,Winfield Hospital,PROPERTY,Has,Size = 42,Size
+JOSH's FUND,FUNDs,Has exposure to,Medical Properties Trust ,REITs,Has,Reputation = 4.5,Social Data,,,
+JOSH's FUND,FUNDs,Has exposure to,Medical Properties Trust ,REITs,Impacted by,Area Emply Rates = Good,MACRO DATA,,,
+JOSH's FUND,FUNDs,Has exposure to,Medical Properties Trust ,REITs,Impacted by,Revenue = XYZ,MARKET DATA,,,
+JOSH's FUND,FUNDs,Has exposure to,Medical Properties Trust ,REITs,has category,Equity REIT,REIT Type,,,
+JOSH's FUND,FUNDs,Has exposure to,Medical Properties Trust ,REITs,Belongs To,Healthcare,Industry Type,,,
+JOSH's FUND,FUNDs,Has exposure to,Simon Property Group,REITs,Owns,SouthPark,PROPERTY,Rents to,Aberchrombie & Fitch,TENANT
+JOSH's FUND,FUNDs,Has exposure to,Simon Property Group,REITs,Owns,SouthPark,PROPERTY,Rents to,Children Place,TENANT
+JOSH's FUND,FUNDs,Has exposure to,Simon Property Group,REITs,Owns,SouthPark,PROPERTY,Rents to,Gap,TENANT
+JOSH's FUND,FUNDs,Has exposure to,Simon Property Group,REITs,Owns,SouthPark,PROPERTY,Rents to,JC Penny,TENANT
+JOSH's FUND,FUNDs,Has exposure to,Simon Property Group,REITs,Owns,SouthPark,PROPERTY,Rents to,Macys,TENANT
+JOSH's FUND,FUNDs,Has exposure to,Simon Property Group,REITs,Owns,SouthPark,PROPERTY,Rents to,Sears,TENANT
+JOSH's FUND,FUNDs,Has exposure to,Simon Property Group,REITs,Owns,SouthPark,PROPERTY,Rents to,Best Buy,TENANT
+JOSH's FUND,FUNDs,Has exposure to,Simon Property Group,REITs,Owns,SouthPark,PROPERTY,Belongs to,Retail,Industry Type
+JOSH's FUND,FUNDs,Has exposure to,Simon Property Group,REITs,Owns,SouthPark,PROPERTY,Impacted by,Occupancy 60%,MARKET DATA
+JOSH's FUND,FUNDs,Has exposure to,Simon Property Group,REITs,Owns,SouthPark,PROPERTY,Impacted by,Location = Charlotte,Geographical Data
+JOSH's FUND,FUNDs,Has exposure to,Simon Property Group,REITs,Owns,SouthPark,PROPERTY,Has,Size = 398695,Size
+JOSH's FUND,FUNDs,Has exposure to,Simon Property Group,REITs,Owns,Charlotte Premium Outlets,PROPERTY,Belongs to,Retail,Industry Type
+JOSH's FUND,FUNDs,Has exposure to,Simon Property Group,REITs,Owns,Charlotte Premium Outlets,PROPERTY,Impacted by,Occupancy 65%,MARKET DATA
+JOSH's FUND,FUNDs,Has exposure to,Simon Property Group,REITs,Owns,Charlotte Premium Outlets,PROPERTY,Impacted by,Location = Charlotte,Geographical Data
+JOSH's FUND,FUNDs,Has exposure to,Simon Property Group,REITs,Owns,Charlotte Premium Outlets,PROPERTY,Has,Size = 1724929,Size
+JOSH's FUND,FUNDs,Has exposure to,Simon Property Group,REITs,Owns,Fashion Valley,PROPERTY,Belongs to,Retail,Industry Type
+JOSH's FUND,FUNDs,Has exposure to,Simon Property Group,REITs,Owns,Fashion Valley,PROPERTY,Impacted by,Occupancy 45%,MARKET DATA
+JOSH's FUND,FUNDs,Has exposure to,Simon Property Group,REITs,Owns,Fashion Valley,PROPERTY,Impacted by,Location = NJ,Geographical Data
+JOSH's FUND,FUNDs,Has exposure to,Simon Property Group,REITs,Owns,Fashion Valley,PROPERTY,Has,Size = 1125086,Size
+JOSH's FUND,FUNDs,Has exposure to,Simon Property Group,REITs,Owns,Ingram Park Mall,PROPERTY,Belongs to,Retail,Industry Type
+JOSH's FUND,FUNDs,Has exposure to,Simon Property Group,REITs,Owns,Ingram Park Mall,PROPERTY,Impacted by,Occupancy 55%,MARKET DATA
+JOSH's FUND,FUNDs,Has exposure to,Simon Property Group,REITs,Owns,Ingram Park Mall,PROPERTY,Impacted by,Location = San Diego,Geographical Data
+JOSH's FUND,FUNDs,Has exposure to,Simon Property Group,REITs,Owns,Ingram Park Mall,PROPERTY,Has,Size = 553933,Size
+JOSH's FUND,FUNDs,Has exposure to,Simon Property Group,REITs,Owns,Las Americas Premium Outlets,PROPERTY,Belongs to,Retail,Industry Type
+JOSH's FUND,FUNDs,Has exposure to,Simon Property Group,REITs,Owns,Las Americas Premium Outlets,PROPERTY,Impacted by,Occupancy 55%,MARKET DATA
+JOSH's FUND,FUNDs,Has exposure to,Simon Property Group,REITs,Owns,Las Americas Premium Outlets,PROPERTY,Impacted by,Location = Austin,Geographical Data
+JOSH's FUND,FUNDs,Has exposure to,Simon Property Group,REITs,Owns,Las Americas Premium Outlets,PROPERTY,Has,Size = 549154,Size
+JOSH's FUND,FUNDs,Has exposure to,Simon Property Group,REITs,Owns,Philadelphia Mills,PROPERTY,Belongs to,Retail,Industry Type
+JOSH's FUND,FUNDs,Has exposure to,Simon Property Group,REITs,Owns,Philadelphia Mills,PROPERTY,Impacted by,Occupancy 66%,MARKET DATA
+JOSH's FUND,FUNDs,Has exposure to,Simon Property Group,REITs,Owns,Philadelphia Mills,PROPERTY,Impacted by,Location = Philadelphia,Geographical Data
+JOSH's FUND,FUNDs,Has exposure to,Simon Property Group,REITs,Owns,Philadelphia Mills,PROPERTY,Has,Size = 1684152,Size
+JOSH's FUND,FUNDs,Has exposure to,Simon Property Group,REITs,Owns,South Hills Village,PROPERTY,Belongs to,Retail,Industry Type
+JOSH's FUND,FUNDs,Has exposure to,Simon Property Group,REITs,Owns,South Hills Village,PROPERTY,Impacted by,Occupancy 44%,MARKET DATA
+JOSH's FUND,FUNDs,Has exposure to,Simon Property Group,REITs,Owns,South Hills Village,PROPERTY,Impacted by,Location = San Diego,Geographical Data
+JOSH's FUND,FUNDs,Has exposure to,Simon Property Group,REITs,Owns,South Hills Village,PROPERTY,Has,Size = 1128101,Size
+JOSH's FUND,FUNDs,Has exposure to,Simon Property Group,REITs,Has,Reputation = 3.5,Social Data,,,
+JOSH's FUND,FUNDs,Has exposure to,Simon Property Group,REITs,Impacted by,Area Emply Rates = Average,MACRO DATA,,,
+JOSH's FUND,FUNDs,Has exposure to,Simon Property Group,REITs,Impacted by,Revenue = ABC,MARKET DATA,,,
+JOSH's FUND,FUNDs,Has exposure to,Simon Property Group,REITs,has category,Equity REIT,REIT Type,,,
+JOSH's FUND,FUNDs,Has exposure to,Simon Property Group,REITs,Belongs To,Retail,Industry Type,,,
+JOSH's FUND,FUNDs,Has exposure to,BlackStone Mortgage Trust ,REITs,Has,Reputation = 3.5,Social Data,,,
+JOSH's FUND,FUNDs,Has exposure to,BlackStone Mortgage Trust ,REITs,Impacted by,Area Emply Rates = V good,MACRO DATA,,,
+JOSH's FUND,FUNDs,Has exposure to,BlackStone Mortgage Trust ,REITs,Impacted by,Revenue = ABC,MARKET DATA,,,
+JOSH's FUND,FUNDs,Has exposure to,BlackStone Mortgage Trust ,REITs,has category,Mortgage REIT,REIT Type,,,
+JOSH's FUND,FUNDs,Has exposure to,BlackStone Mortgage Trust ,REITs,Belongs To,Mortgage ,Industry Type,,,
+JOSH's FUND,FUNDs,Has exposure to,MGM Resorts International,REITs,Has,Reputation = 5,Social Data,,,
+JOSH's FUND,FUNDs,Has exposure to,MGM Resorts International,REITs,Impacted by,Area Emply Rates = V good,MACRO DATA,,,
+JOSH's FUND,FUNDs,Has exposure to,MGM Resorts International,REITs,Impacted by,Revenue = AAA,MARKET DATA,,,
+JOSH's FUND,FUNDs,Has exposure to,MGM Resorts International,REITs,has category,Public REIT,REIT Type,,,
+JOSH's FUND,FUNDs,Has exposure to,MGM Resorts International,REITs,Belongs To,Resorts,Industry Type,,,
+JOSH's FUND,FUNDs,Has exposure to,Gladstone Land,REITs,Owns,Somerset Road,PROPERTY,,,
+JOSH's FUND,FUNDs,Has exposure to,Gladstone Land,REITs,Owns,Greenhills Boulevard,PROPERTY,,,
+JOSH's FUND,FUNDs,Has exposure to,Gladstone Land,REITs,Owns,Van Buren Trail,PROPERTY,,,
+JOSH's FUND,FUNDs,Has exposure to,Gladstone Land,REITs,Owns,Blue Star Highway,PROPERTY,,,
+JOSH's FUND,FUNDs,Has exposure to,Gladstone Land,REITs,Owns,Yolo County Line Road,PROPERTY,,,
+JOSH's FUND,FUNDs,Has exposure to,Gladstone Land,REITs,Owns,San Juan Grade Road(,PROPERTY,,,
+JOSH's FUND,FUNDs,Has exposure to,Gladstone Land,REITs,Owns,West Citrus Boulevard,PROPERTY,,,
+JOSH's FUND,FUNDs,Has exposure to,Gladstone Land,REITs,Owns,Sutter Avenue,PROPERTY,,,
+JOSH's FUND,FUNDs,Has exposure to,Gladstone Land,REITs,Owns,Las Posas Road(,PROPERTY,,,
+JOSH's FUND,FUNDs,Has exposure to,Gladstone Land,REITs,Has,Reputation = 5,Social Data,,,
+JOSH's FUND,FUNDs,Has exposure to,Gladstone Land,REITs,Impacted by,Area Emply Rates = V good,MACRO DATA,,,
+JOSH's FUND,FUNDs,Has exposure to,Gladstone Land,REITs,Impacted by,Revenue = AAA,MARKET DATA,,,
+JOSH's FUND,FUNDs,Has exposure to,Gladstone Land,REITs,has category,Public REIT,REIT Type,,,
+JOSH's FUND,FUNDs,Has exposure to,Gladstone Land,REITs,Belongs To,Agricultural,Industry Type,,,
+JOSH's FUND,FUNDs,Has exposure to,"AvalonBay Communities, Inc.",REITs,Owns,Avalon Burbank,PROPERTY,,,
+JOSH's FUND,FUNDs,Has exposure to,"AvalonBay Communities, Inc.",REITs,Owns,Avalon Glendora,PROPERTY,,,
+JOSH's FUND,FUNDs,Has exposure to,"AvalonBay Communities, Inc.",REITs,Owns,Avalon Green II,PROPERTY,,,
+JOSH's FUND,FUNDs,Has exposure to,"AvalonBay Communities, Inc.",REITs,Owns,Avalon Redmond Place,PROPERTY,,,
+JOSH's FUND,FUNDs,Has exposure to,"AvalonBay Communities, Inc.",REITs,Owns,Avalon Vista,PROPERTY,,,
+JOSH's FUND,FUNDs,Has exposure to,"AvalonBay Communities, Inc.",REITs,Owns,Eaves Burlington,PROPERTY,,,
+JOSH's FUND,FUNDs,Has exposure to,"AvalonBay Communities, Inc.",REITs,Owns,Eaves Mission Ridge,PROPERTY,,,
+JOSH's FUND,FUNDs,Has exposure to,"AvalonBay Communities, Inc.",REITs,Owns,Eaves San Jose,PROPERTY,,,
+JOSH's FUND,FUNDs,Has exposure to,"AvalonBay Communities, Inc.",REITs,Has,Reputation = 3,Social Data,,,
+JOSH's FUND,FUNDs,Has exposure to,"AvalonBay Communities, Inc.",REITs,Impacted by,Area Emply Rates = Poor,MACRO DATA,,,
+JOSH's FUND,FUNDs,Has exposure to,"AvalonBay Communities, Inc.",REITs,Impacted by,Revenue = BBB,MARKET DATA,,,
+JOSH's FUND,FUNDs,Has exposure to,"AvalonBay Communities, Inc.",REITs,has category,Public REIT,REIT Type,,,
+JOSH's FUND,FUNDs,Has exposure to,"AvalonBay Communities, Inc.",REITs,Belongs To,Residential,Industry Type,,,
