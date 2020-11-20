@@ -1,4 +1,4 @@
-FUND,FUND_Label,FUND_REIT_relationship,REIT,REIT_LABEL,REIT_Property_relationship,Property,Property_Label,Property_PropertyType_relationship,PropertyType,PropertyType_Label 
+FUND,FUND_Label,FUND_REIT_relationship,REIT,REIT_LABEL,REIT_Property_relationship,Property,Property_Label,Property_PropertyType_relationship,PropertyType,PropertyType_Label
 JOSH's FUND,FUNDS,Is managed by,Fund Manager,USERs,,,,,,
 JOSH's FUND,FUNDs,Has exposure to,Medical Properties Trust ,REITs,Owns,Alvarado Hospital Medical Center,PROPERTY,Belongs to,Healthcare,Industry Type
 JOSH's FUND,FUNDs,Has exposure to,Medical Properties Trust ,REITs,Owns,Alvarado Hospital Medical Center,PROPERTY,Impacted by,Occupancy 60%,MARKET DATA
