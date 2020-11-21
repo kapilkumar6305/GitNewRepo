@@ -1,0 +1,252 @@
+LOAD CSV WITH HEADERS FROM 'https://github.com/kapilkumar6305/GitNewRepo/blob/master/grapf_db_data_new1.csv?raw=true' AS row
+WITH row WHERE row.REIT IS NOT NULL AND row.FUND_REIT_relationship IS NOT NULL AND row.FUND IS NOT NULL
+FOREACH ( ignoreMe in 
+CASE WHEN row.FUND_Label='FUNDS' and row.REIT_LABEL= 'USERs' THEN [1] ELSE [] END | 
+MERGE (r:USERs {USER_Name: row.REIT})
+MERGE (f:FUNDS {FUND_Name: row.FUND})
+MERGE (f)-[:Relationship {relation:row.FUND_REIT_relationship }]->(r))
+
+FOREACH ( ignoreMe in 
+CASE WHEN row.FUND_Label='FUNDs' and row.REIT_LABEL= 'REITs' THEN [1] ELSE [] END | 
+MERGE (r:REITs {REIT_Name: row.REIT})
+MERGE (f:FUNDS {FUND_Name: row.FUND})
+MERGE (f)-[:Relationship {relation:row.FUND_REIT_relationship }]->(r));
+
+LOAD CSV WITH HEADERS FROM 'https://github.com/kapilkumar6305/GitNewRepo/blob/master/grapf_db_data_new1.csv?raw=true' AS row
+WITH row WHERE row.REIT IS NOT NULL AND row.REIT_Property_relationship IS NOT NULL AND row.Property IS NOT NULL
+FOREACH ( ignoreMe in 
+CASE WHEN row.REIT_LABEL='REITs' and row.Property_Label= 'PROPERTY' THEN [1] ELSE [] END | 
+MERGE (r: REITs {REIT_Name: row.REIT})
+MERGE (p:PROPERTY {Property_Name: row.Property})
+MERGE (r)-[:Relationship {relation:row.REIT_Property_relationship }]->(p))
+
+FOREACH ( ignoreMe in 
+CASE WHEN row.REIT_LABEL='REITs' and row.Property_Label= 'Social Data' THEN [1] ELSE [] END | 
+MERGE (r: REITs {REIT_Name: row.REIT})
+MERGE (p:`Social Data` {Property_Name: row.Property})
+MERGE (r)-[:Relationship {relation:row.REIT_Property_relationship }]->(p))
+
+FOREACH ( ignoreMe in 
+CASE WHEN row.REIT_LABEL='REITs' and row.Property_Label= 'MACRO DATA' THEN [1] ELSE [] END | 
+MERGE (r: REITs {REIT_Name: row.REIT})
+MERGE (p:`MACRO DATA` {Property_Name: row.Property})
+MERGE (r)-[:Relationship {relation:row.REIT_Property_relationship }]->(p))
+
+FOREACH ( ignoreMe in 
+CASE WHEN row.REIT_LABEL='REITs' and row.Property_Label= 'MARKET DATA' THEN [1] ELSE [] END | 
+MERGE (r: REITs {REIT_Name: row.REIT})
+MERGE (p:`MARKET DATA` {Property_Name: row.Property})
+MERGE (r)-[:Relationship {relation:row.REIT_Property_relationship }]->(p))
+
+FOREACH ( ignoreMe in 
+CASE WHEN row.REIT_LABEL='REITs' and row.Property_Label= 'REIT Type' THEN [1] ELSE [] END | 
+MERGE (r: REITs {REIT_Name: row.REIT})
+MERGE (p:`REIT Type` {Property_Name: row.Property})
+MERGE (r)-[:Relationship {relation:row.REIT_Property_relationship }]->(p))
+
+
+
+FOREACH ( ignoreMe in 
+CASE WHEN row.REIT_LABEL='REITs' and row.Property_Label= 'Industry Type' THEN [1] ELSE [] END | 
+MERGE (r: REITs {REIT_Name: row.REIT})
+MERGE (p:`Industry Type` {Property_Name: row.Property})
+MERGE (r)-[:Relationship {relation:row.REIT_Property_relationship }]->(p));
+
+LOAD CSV WITH HEADERS FROM 'https://github.com/kapilkumar6305/GitNewRepo/blob/master/grapf_db_data_new1.csv?raw=true' AS row
+WITH row WHERE row.Property IS NOT NULL AND row.Property_PropertyType_relationship
+ IS NOT NULL AND row.PropertyType IS NOT NULL
+FOREACH ( ignoreMe in 
+CASE WHEN row.Property_Label='PROPERTY' and row.PropertyType_Label = 'Industry Type' THEN [1] ELSE [] END | 
+MERGE (p:PROPERTY {Property_Name: row.Property})
+MERGE (pt:`Industry Type` {Property_Name: row.PropertyType})
+MERGE (p)-[:Relationship {relation:row.Property_PropertyType_relationship}]->(pt))
+
+FOREACH ( ignoreMe in 
+CASE WHEN row.Property_Label='PROPERTY' and row.PropertyType_Label = 'MARKET DATA' THEN [1] ELSE [] END | 
+MERGE (p:PROPERTY {Property_Name: row.Property})
+MERGE (pt:`MARKET DATA` {Property_Name: row.PropertyType})
+MERGE (p)-[:Relationship {relation:row.Property_PropertyType_relationship}]->(pt))
+
+FOREACH ( ignoreMe in 
+CASE WHEN row.Property_Label='PROPERTY' and row.PropertyType_Label = 'Geographical Data' THEN [1] ELSE [] END | 
+MERGE (p:PROPERTY {Property_Name: row.Property})
+MERGE (pt:`Geographical Data` {Property_Name: row.PropertyType})
+MERGE (p)-[:Relationship {relation:row.Property_PropertyType_relationship}]->(pt))
+
+FOREACH ( ignoreMe in 
+CASE WHEN row.Property_Label='PROPERTY' and row.PropertyType_Label = 'Size' THEN [1] ELSE [] END | 
+MERGE (p:PROPERTY {Property_Name: row.Property})
+MERGE (pt:Size {Property_Name: row.PropertyType})
+MERGE (p)-[:Relationship {relation:row.Property_PropertyType_relationship}]->(pt))
+
+FOREACH ( ignoreMe in 
+CASE WHEN row.Property_Label='PROPERTY' and row.PropertyType_Label = 'TENANT' THEN [1] ELSE [] END | 
+MERGE (p:PROPERTY {Property_Name: row.Property})
+MERGE (pt:TENANT {Property_Name: row.PropertyType})
+MERGE (p)-[:Relationship {relation:row.Property_PropertyType_relationship}]->(pt));
+
+LOAD CSV WITH HEADERS FROM 'https://github.com/kapilkumar6305/GitNewRepo/blob/master/grapf_db_data_new1.csv?raw=true' AS row
+WITH row WHERE row.PropertyType IS NOT NULL AND row.PropertyType_Location_relationship IS NOT NULL AND row.Location IS NOT NULL
+FOREACH ( ignoreMe in 
+CASE WHEN row.Property_Label='PROPERTY' and row.PropertyType_Label = 'Geographical Data' THEN [1] ELSE [] END | 
+MERGE (pt:`Geographical Data` {Property_Name: row.PropertyType})
+MERGE (l:Location {Property_Name: row.Property})
+MERGE (pt)-[:Relationship {relation:row.PropertyType_Location_relationship}]->(l));
+
+
+
+############################################################## START #######################################################################
+
+LOAD CSV WITH HEADERS FROM 'file:///grapf_db_final.csv' AS row
+WITH row WHERE row.FUNDs IS NOT NULL AND 
+row.USERs IS NOT NULL
+MERGE (f:FUNDS {FundName: row.FUNDs})
+MERGE (u:USERS {UserName: row.USERs})
+MERGE (f)-[:IS_MANAGED_BY]->(u);
+
+LOAD CSV WITH HEADERS FROM 'file:///grapf_db_final.csv' AS row
+WITH row WHERE row.FUNDs IS NOT NULL AND 
+row.REITs IS NOT NULL
+MERGE (f:FUNDS {FundName: row.FUNDs})
+MERGE (r:REITS {ReitName: row.REITs})
+MERGE (f)-[:HAS_EXPOSURE_TO]->(r);
+
+LOAD CSV WITH HEADERS FROM 'file:///grapf_db_final.csv' AS row
+WITH row WHERE row.REIT_Social_Data IS NOT NULL AND 
+row.REITs IS NOT NULL
+MERGE (r:REITS {ReitName: row.REITs})
+MERGE (s:SOCIAL_DATA {SocialData: row.REIT_Social_Data})
+MERGE (r)-[:HAS_SOCIAL_DATA]->(s);
+
+LOAD CSV WITH HEADERS FROM 'file:///grapf_db_final.csv' AS row
+WITH row WHERE row.REIT_MACRO_DATA IS NOT NULL AND 
+row.REITs IS NOT NULL
+MERGE (r:REITS {ReitName: row.REITs})
+MERGE (m:MACRO_DATA {MacroData: row.REIT_MACRO_DATA})
+MERGE (r)-[:IMPACTED_BY]->(m);
+
+LOAD CSV WITH HEADERS FROM 'file:///grapf_db_final.csv' AS row
+WITH row WHERE row.REIT_MARKET_DATA IS NOT NULL AND 
+row.REITs IS NOT NULL
+MERGE (r:REITS {ReitName: row.REITs})
+MERGE (m:MARKET_DATA {MarketData: row.REIT_MARKET_DATA})
+MERGE (r)-[:IMPACTED_BY]->(m);
+
+LOAD CSV WITH HEADERS FROM 'file:///grapf_db_final.csv' AS row
+WITH row WHERE row.REIT_Type IS NOT NULL AND 
+row.REITs IS NOT NULL
+MERGE (r:REITS {ReitName: row.REITs})
+MERGE (rt:REIT_TYPE {ReitType: row.REIT_Type})
+MERGE (r)-[:HAS_CATEGORY]->(rt);
+
+LOAD CSV WITH HEADERS FROM 'file:///grapf_db_final.csv' AS row
+WITH row WHERE row.REIT_Industry_Type IS NOT NULL AND 
+row.REITs IS NOT NULL
+MERGE (r:REITS {ReitName: row.REITs})
+MERGE (i:INDUSTRY_TYPE {IndustryType: row.REIT_Industry_Type})
+MERGE (r)-[:BELONGS_TO]->(i);
+
+LOAD CSV WITH HEADERS FROM 'file:///grapf_db_final.csv' AS row
+WITH row WHERE row.REIT_Exposure IS NOT NULL AND 
+row.REITs IS NOT NULL
+MERGE (r:REITS {ReitName: row.REITs})
+MERGE (i:REIT_EXPOSURE {Exposure: row.REIT_Exposure})
+MERGE (r)-[:HAS_FUND_EXPOSURE]->(i);
+
+LOAD CSV WITH HEADERS FROM 'file:///grapf_db_final.csv' AS row
+WITH row WHERE row.PROPERTY IS NOT NULL AND 
+row.REITs IS NOT NULL
+MERGE (r:REITS {ReitName: row.REITs})
+MERGE (i:PROPERTIES {PropertyName: row.PROPERTY})
+MERGE (r)-[:OWNS]->(i);
+
+LOAD CSV WITH HEADERS FROM 'file:///grapf_db_final.csv' AS row
+WITH row WHERE row.PROPERTY IS NOT NULL AND 
+row.Industry_Type IS NOT NULL
+MERGE (p:PROPERTIES {PropertyName: row.PROPERTY})
+MERGE (r:INDUSTRY_TYPE {IndustryType: row.Industry_Type})
+MERGE (p)-[:BELONGS_TO]->(r);
+
+LOAD CSV WITH HEADERS FROM 'file:///grapf_db_final.csv' AS row
+WITH row WHERE row.PROPERTY IS NOT NULL AND 
+row.MARKET_DATA IS NOT NULL
+MERGE (p:PROPERTIES {PropertyName: row.PROPERTY})
+MERGE (r:MARKET_DATA {MarketData: row.MARKET_DATA})
+MERGE (p)-[:IMPACTED_BY]->(r);
+
+LOAD CSV WITH HEADERS FROM 'file:///grapf_db_final.csv' AS row
+WITH row WHERE row.PROPERTY IS NOT NULL AND 
+row.MACRO_DATA IS NOT NULL
+MERGE (p:PROPERTIES {PropertyName: row.PROPERTY})
+MERGE (r:MACRO_DATA {MacroData: row.MACRO_DATA})
+MERGE (p)-[:IMPACTED_BY]->(r);
+
+LOAD CSV WITH HEADERS FROM 'file:///grapf_db_final.csv' AS row
+WITH row WHERE row.PROPERTY IS NOT NULL AND 
+row.SIZE IS NOT NULL
+MERGE (p:PROPERTIES {PropertyName: row.PROPERTY})
+MERGE (r:SIZE {Size: row.SIZE})
+MERGE (p)-[:HAS_SIZE]->(r);
+
+LOAD CSV WITH HEADERS FROM 'file:///grapf_db_final.csv' AS row
+WITH row WHERE row.PROPERTY IS NOT NULL AND 
+row.TENANT IS NOT NULL
+MERGE (p:PROPERTIES {PropertyName: row.PROPERTY})
+MERGE (r:TENANTS {TenantName: row.TENANT})
+MERGE (p)-[:RENTS_TO]->(r);
+
+LOAD CSV WITH HEADERS FROM 'file:///grapf_db_final.csv' AS row
+WITH row WHERE row.MACRO_DATA IS NOT NULL AND 
+row.LOCATION IS NOT NULL
+MERGE (p:MACRO_DATA {MacroData: row.MACRO_DATA})
+MERGE (r:LOCATIONS {Location: row.LOCATION})
+MERGE (p)-[:HAS_LOCATION]->(r);
+
+LOAD CSV WITH HEADERS FROM 'file:///grapf_db_final.csv' AS row
+WITH row WHERE row.JOBS IS NOT NULL AND 
+row.LOCATION IS NOT NULL
+MERGE (p:LOCATIONS {Location: row.LOCATION})
+MERGE (r:JOB_FACTORS {JobFactor: row.JOBS})
+MERGE (p)-[:HAS_JOB_FACTOR]->(r);
+
+LOAD CSV WITH HEADERS FROM 'file:///grapf_db_final.csv' AS row
+WITH row WHERE row.Reputation IS NOT NULL AND 
+row.LOCATION IS NOT NULL
+MERGE (p:LOCATIONS {Location: row.LOCATION})
+MERGE (r:REPUTATION_FACTORS {ReputationFactor: row.Reputation})
+MERGE (p)-[:HAS_REPUTATION_FACTOR]->(r);
+
+LOAD CSV WITH HEADERS FROM 'file:///grapf_db_final.csv' AS row
+WITH row WHERE row.Crime IS NOT NULL AND 
+row.LOCATION IS NOT NULL
+MERGE (p:LOCATIONS {Location: row.LOCATION})
+MERGE (r:CRIME_FACTORS {CrimeFactor: row.Crime})
+MERGE (p)-[:HAS_CRIME_FACTOR]->(r);
+
+LOAD CSV WITH HEADERS FROM 'file:///grapf_db_final.csv' AS row
+WITH row WHERE row.Commute IS NOT NULL AND 
+row.LOCATION IS NOT NULL
+MERGE (p:LOCATIONS {Location: row.LOCATION})
+MERGE (r:COMMUTE_FACTORS {CommuteFactor: row.Commute})
+MERGE (p)-[:HAS_COMMUTE_FACTOR]->(r);
+
+LOAD CSV WITH HEADERS FROM 'file:///grapf_db_final.csv' AS row
+WITH row WHERE row.Housing IS NOT NULL AND 
+row.LOCATION IS NOT NULL
+MERGE (p:LOCATIONS {Location: row.LOCATION})
+MERGE (r:HOUSING_FACTORS {HousingFactor: row.Housing})
+MERGE (p)-[:HAS_HOUSING_FACTOR]->(r);
+
+LOAD CSV WITH HEADERS FROM 'file:///grapf_db_final.csv' AS row
+WITH row WHERE row.Cost_of_Living IS NOT NULL AND 
+row.LOCATION IS NOT NULL
+MERGE (p:LOCATIONS {Location: row.LOCATION})
+MERGE (r:COST_OF_LIVING_FACTORS {CostOfLivingFactor: row.Cost_of_Living})
+MERGE (p)-[:HAS_COST_OF_LIVING_FACTOR]->(r);
+
+
+
+##################################################################### END ###################################################################
+
+
+
